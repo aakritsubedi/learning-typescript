@@ -40,3 +40,43 @@ $ npm install -g typescript
 ```  
 
 It is going to install TypeScript on your machine. 
+
+## Static Type Checking 
+
+The main fundamental difference between TypeScript & JavaScript is that TypeScript uses strict types & JavaScript does not.  
+
+With TypeScript we can check & assign variable, parameter and function types. 
+
+- It is completely optional 
+- Helps us find & prevent bugs & stop future issues from happening 
+- Make our code much more readable & descriptive
+
+If we define a variable as a string, then in TypeScript it will always be a string and it's type cannot be changed later and the same would be true of any other type like numbers, booleans, objects, array ... 
+
+**TypeScript Types**:
+`String`, `Number`, `Boolean`, `Array`, `Any`, `Void`, `Null`, `Tuple`, `Enum`, `Generics`
+
+Note: Whole No. and Decimal No. are not two separate types  like in other programming languages. Instead we just have a number type which covers the whole.  
+
+TypeScript uses inference or it infers the type bases on the value we assigned it. We can also explicitly define what type of variable will be as shown in following examples.
+
+```typescript
+let name = 'Aakrit Subedi';
+let age:number = 24;
+let email:string = 'aakritsubedi9@gmail.com'
+```
+
+Code Example: [Types](./codes/01_types.ts)
+
+## Compiling TypeScript
+
+```shell
+# Run the following command to compile the TypeScript Code
+$ tsc codes/01_types.ts 01_types.js
+# is similar to 
+$ tsc codes/01_types.ts
+# also, can change the filename
+$ tsc codes/01_types.ts script.js
+# --watch flag
+$ tsc codes/01_types.ts --watch
+```
