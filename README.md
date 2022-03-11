@@ -83,6 +83,44 @@ interface IPerson {
 
 Code Example: [Interfaces](./src/02_interfaces.ts)
 
+**Class**: A class in terms of OOP is a blueprint for creating objects. A class encapsulates data for the object.  
+
+```javascript
+// Syntax for creating classes in ts
+class class_name { 
+   //class scope 
+}
+```
+
+The class keyword is followed by the class name. The rules for identifiers must be considered while naming a class.
+
+A class definition can include the following −
+
+- Fields − A field is any variable declared in a class. Fields represent data pertaining to objects
+- Constructors − Responsible for allocating memory for the objects of the class
+- Functions − Functions represent actions an object can take. They are also at times referred to as methods
+
+These components put together are termed as the data members of the class.  
+For Example: 
+```javascript
+class Car { 
+   //field 
+   engine:string; 
+ 
+   //constructor 
+   constructor(engine:string) { 
+      this.engine = engine 
+   }  
+
+   //function 
+   disp():void { 
+      console.log("Engine is  :   "+this.engine) 
+   } 
+}
+```
+
+Code Example: [Classes](./src/03_classes.ts)
+
 ## Compiling TypeScript
 
 ```shell
